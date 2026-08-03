@@ -55,7 +55,7 @@ Motor PWM is generated on four PWM generator blocks at a 1024-count load value, 
 
 ## Computer Vision
 
-<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/line_angle_detect.png" class="center">
+<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/line_angle_detect2.png" class="center">
 
 The OpenMV script (`computer_vision.py`) performs weighted line tracking:
 
