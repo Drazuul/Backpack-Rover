@@ -1,3 +1,5 @@
+# OPENMV Blob Detection Code
+
 import sensor
 import time
 import math
