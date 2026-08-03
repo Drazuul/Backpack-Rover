@@ -3,7 +3,7 @@
 description
 
 <img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/robot.jpg" class="center">
-<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/CAD_model.jpg" class="center">
+<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/CAD_model.png" class="center">
 <img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/under_the_hood.jpg" class="center">
 <img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/line_angle_detect.png" class="center">
 
