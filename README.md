@@ -4,8 +4,6 @@ A line-following rover that can drive itself or be teleoperated with an Xbox con
 
 <img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/robot.jpg" class="center">
 <img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/CAD_model.png" class="center">
-<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/under_the_hood.jpg" class="center">
-<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/line_angle_detect.png" class="center">
 
 ---
 
@@ -46,6 +44,8 @@ A Raspberry Pi acts as the coordination layer: it reads the controller, listens 
 
 ## Bare Metal Firmware
 
+<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/Redboard.jpg" class="center">
+
 The TM4C123 firmware (`robogobo.c`) runs two interrupt-driven loops:
 
 - **UART0 RX ISR** — a small state machine (`WAIT_HEADER → WAIT_CMD → WAIT_HI → WAIT_LO`) parses incoming serial commands in the format `M` + `D`/`T` + high byte + low byte, updating global `forward` and `turn` values.
@@ -54,6 +54,8 @@ The TM4C123 firmware (`robogobo.c`) runs two interrupt-driven loops:
 Motor PWM is generated on four PWM generator blocks at a 1024-count load value, with GPIO pins mapped across ports B, C, and E.
 
 ## Computer Vision
+
+<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/line_angle_detect.png" class="center">
 
 The OpenMV script (`computer_vision.py`) performs weighted line tracking:
 
@@ -75,4 +77,4 @@ The OpenMV script (`computer_vision.py`) performs weighted line tracking:
 
 ## Robot Construction
 
-_Add mechanical build details here — chassis material, motor/wheel specs, CAD notes, assembly steps, etc._
+<img src="https://github.com/Drazuul/Backpack-Rover/blob/main/images/under_the_hood.jpg" class="center">
