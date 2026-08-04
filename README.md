@@ -23,10 +23,10 @@ The purpose of this project was to develop a "Backpackable" robot that can be us
 
 ## Overview
 
-The Backpack Rover is a 4-motor rover that fuses two control modes:
+The Backpack Rover is a 4-wheeled, differential drive mobile robot base that contains two modes of operation:
 
-- **Autonomous line-following** using an OpenMV camera that detects a black line via grayscale blob detection and reports a steering angle.
-- **Manual teleoperation** via a Bluetooth Xbox controller, read on a Raspberry Pi and relayed over serial.
+- **Autonomous line-following** Uses a simple blob detection via an OpenMV camera to detect and follow road lines.
+- **Manual teleoperation** Uses an XBox or Ps4 Controller via Bluetooth Connection to manually teleoperate the robot.
 
 A Raspberry Pi acts as the coordination layer: it reads the controller, listens for the vision system's line-angle data, and forwards drive/turn commands over UART to a TM4C123 microcontroller, which handles low-level PWM motor control on a hardware timer interrupt.
 
@@ -38,11 +38,13 @@ A Raspberry Pi acts as the coordination layer: it reads the controller, listens 
 
 ## Hardware Overview
 
-- **TM4C123GH6PM (Tiva C Launchpad)** - motor controller, running bare-metal C
-- **OpenMV Cam** - grayscale camera module for line detection
-- **Raspberry Pi** - controller input + serial bridge between Pi, camera, and MCU
-- **Xbox Wireless Controller** - manual drive input (Bluetooth)
-- **4x DC motors** - driven in forward/reverse pairs via PWM (mixed for differential steering)
+- **TM4C123GH6PM MCU**
+- **OpenMV H7 Plus**
+- **Raspberry Pi**
+- **Wireless Controller**
+- **3s 11.1v LiPO batteries**
+- **BTS 7690 Motor Controllers**
+- **12v DC Brushed motors**
 
 ## Bare Metal Firmware
 
